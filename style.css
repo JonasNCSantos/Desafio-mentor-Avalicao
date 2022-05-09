@@ -1,0 +1,220 @@
+:root{
+    --color-primary: #F67669;
+    --color-secondary: #293241;
+    --color-third: #BFD7E4;
+    --f-color: #ffffff;
+    --ff-primary:'Staatliches', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+    --color-bg-input: #FAFAFC;
+    --fc-label: #4E4958;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-third);
+    margin: 107px;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background: var(--color-secondary);
+    width: 100%;
+    height: 465px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.page{
+    width: 750px;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h1{
+    color: var(--f-color);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+header p{
+    color: var(--f-color);
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+form{
+    background: var(--f-color);
+    border-radius: 20px;
+    min-height: 800px;
+}
+
+fieldset{
+    border: none;
+    margin: 32px 64px 0 64px;
+}
+
+.legend-main{
+    background: var(--color-primary);
+    height: 133px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--f-color);
+    font-family: var(--ff-primary);
+}
+
+label{
+    font-family: var(--ff-secondary);
+    color: var(--fc-label);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 56px;
+    background: var(--color-bg-input);
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+input:invalid{
+    outline: 1px solid var(--color-third);
+}
+
+.colum-two{
+    display: flex;
+    gap: 22px;
+}
+
+.colum-two .input-wrapper-name{
+    width: 50%;
+}
+
+.colum-two .input-wrapper-suname{
+    width: 50%;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+span{
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 10px;
+}
+
+span:hover{
+    color: #6c6480;
+}
+
+legend{
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-wrapper select{
+    background: var(--color-bg-input);
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    height: 55px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+    margin-top: 8px;
+}
+
+textarea{
+    height: 167px;
+}
+
+.checkbox-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.fieldset-wrapper .checkbox-wrapper #checkbox-wrapper{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
+
+.fieldset-wrapper .checkbox-wrapper #checkbox-wrapper:checked{
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z' fill='%23F67669'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: 1px solid var(--color-primary);
+}
+
+.colum-two-date{
+    display: flex;
+    gap: 32px;
+}
+.input-wrapper-date{
+    width: 100%;
+}
+
+.time{
+    display: flex;
+    gap: 10px;
+}
+
+.button{
+    background: var(--color-primary);
+    color: var(--f-color);
+    border-radius: 8px;
+    margin-bottom: 64px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
